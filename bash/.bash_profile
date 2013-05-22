@@ -7,6 +7,9 @@ export SOAPUI_HOME='/home/marvin/Apps/dev/soapui/soapui-3.6.1'
 export OPENEJB_HOME='/home/marvin/Projects/NCS/warcraft/git-source/warcraft-source/warcraft/apache-openejb-4.0.0'
 export ANT_HOME='/opt/ant/apache-ant-1.8.4'
 
+source /etc/bash_completion.d/git
+export PS1='\u@\h:\W$(__git_ps1 " (%s)")\$ '
+
 export PATH=$PATH:$MAVEN_HOME/bin:$JAVA_HOME/bin:$OPENEJB_HOME/bin:$ANT_HOME/bin
 
 alias wcf='cd /home/marvin/Projects/NCS/warcraft/git-source/warcraft-source'
